@@ -203,8 +203,9 @@ top: 210px;
 .fs-item{
     display: flex;
     gap: 18px;
-
-
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 16px;
+    margin-bottom: 25px;
 }
 
 .fs-item-left img{
@@ -212,6 +213,7 @@ top: 210px;
  height: 180px;
  left: 150px;
  top: 1088px;
+ border-radius: 6px;
 }
 
 .fs-item-right h3{
@@ -253,4 +255,21 @@ top: 210px;
     font-size: 16px;
     line-height: 24px;
     color: #21243D;
+}
+
+@media only all and (max-width: 600px) {
+    .main-inner{
+        flex-direction: column-reverse;
+    }
+    .col-2{
+        margin-bottom: 30px;
+    }
+    .col-1{
+        text-align: center;
+        margin: 0 24px;
+    }
+    .action-button{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
